@@ -9,16 +9,16 @@ class GrwndMcp < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Grwnd-AI/grwnd/releases/download/v0.1.0/grwnd-mcp_0.1.0_darwin_amd64.tar.gz"
-      sha256 "f4eed7528ad552e4559adb74eed23e5da92352604132cf59cb755d41dc9c1a2d"
+      url "https://github.com/Grwnd-AI/grwnd-mcp/releases/download/v0.1.0/grwnd-mcp_0.1.0_darwin_amd64.tar.gz"
+      sha256 "460f3eebfea34daae7dc22ebb40415b08e2452b8aeec21591c7842546216fe37"
 
       def install
         bin.install "grwnd-mcp"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Grwnd-AI/grwnd/releases/download/v0.1.0/grwnd-mcp_0.1.0_darwin_arm64.tar.gz"
-      sha256 "eece1ec4d4c934b3a177eb26ed974ed528afebe1c32a12edd38e9084e939d3f6"
+      url "https://github.com/Grwnd-AI/grwnd-mcp/releases/download/v0.1.0/grwnd-mcp_0.1.0_darwin_arm64.tar.gz"
+      sha256 "407282abf5c6c9c02d28bc0f8105c3abd525b0f3f08edb1353af49b3d949dd6e"
 
       def install
         bin.install "grwnd-mcp"
@@ -28,15 +28,15 @@ class GrwndMcp < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Grwnd-AI/grwnd/releases/download/v0.1.0/grwnd-mcp_0.1.0_linux_amd64.tar.gz"
-      sha256 "9a49d4ea911b6d1d8596800e1b4af1b4711f3642e6e373ed99c97e5710120149"
+      url "https://github.com/Grwnd-AI/grwnd-mcp/releases/download/v0.1.0/grwnd-mcp_0.1.0_linux_amd64.tar.gz"
+      sha256 "2c9c5d0459f7e16710f04df18ef8df2191de80d85aaa3e69a86d6abd2a7046e7"
       def install
         bin.install "grwnd-mcp"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Grwnd-AI/grwnd/releases/download/v0.1.0/grwnd-mcp_0.1.0_linux_arm64.tar.gz"
-      sha256 "fc6c77c1632bb2ae4305506ffdbad9fc59d83a33e972e82b22dbff18d68887f4"
+      url "https://github.com/Grwnd-AI/grwnd-mcp/releases/download/v0.1.0/grwnd-mcp_0.1.0_linux_arm64.tar.gz"
+      sha256 "b4196ebcf6790ac2d9958d495e6de0e4554d8cfc3ec3d89d51f5ab4b3b3bb5ca"
       def install
         bin.install "grwnd-mcp"
       end
