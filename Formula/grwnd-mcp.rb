@@ -9,16 +9,16 @@ class GrwndMcp < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Grwnd-AI/grwnd-mcp/releases/download/v0.1.0/grwnd-mcp_0.1.0_darwin_amd64.tar.gz"
-      sha256 "460f3eebfea34daae7dc22ebb40415b08e2452b8aeec21591c7842546216fe37"
+      url "https://github.com/Grwnd-AI/grwnd-mcp/releases/download/v0.1.0/grwnd-mcp_darwin_amd64.tar.gz"
+      sha256 "fd162d6cd66e0621c89c5f3b14cef649ec717320c663c2d2a4425f9ef645a25c"
 
       def install
         bin.install "grwnd-mcp"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Grwnd-AI/grwnd-mcp/releases/download/v0.1.0/grwnd-mcp_0.1.0_darwin_arm64.tar.gz"
-      sha256 "407282abf5c6c9c02d28bc0f8105c3abd525b0f3f08edb1353af49b3d949dd6e"
+      url "https://github.com/Grwnd-AI/grwnd-mcp/releases/download/v0.1.0/grwnd-mcp_darwin_arm64.tar.gz"
+      sha256 "ecf421725f59db2c03e05564f11c5265a6259f1d672afd345f5613efda54d594"
 
       def install
         bin.install "grwnd-mcp"
@@ -28,15 +28,15 @@ class GrwndMcp < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Grwnd-AI/grwnd-mcp/releases/download/v0.1.0/grwnd-mcp_0.1.0_linux_amd64.tar.gz"
-      sha256 "2c9c5d0459f7e16710f04df18ef8df2191de80d85aaa3e69a86d6abd2a7046e7"
+      url "https://github.com/Grwnd-AI/grwnd-mcp/releases/download/v0.1.0/grwnd-mcp_linux_amd64.tar.gz"
+      sha256 "5d97fa1fa939186b5e1a9e38124084afc4393a559b737492e21b64418fbfa07c"
       def install
         bin.install "grwnd-mcp"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Grwnd-AI/grwnd-mcp/releases/download/v0.1.0/grwnd-mcp_0.1.0_linux_arm64.tar.gz"
-      sha256 "b4196ebcf6790ac2d9958d495e6de0e4554d8cfc3ec3d89d51f5ab4b3b3bb5ca"
+      url "https://github.com/Grwnd-AI/grwnd-mcp/releases/download/v0.1.0/grwnd-mcp_linux_arm64.tar.gz"
+      sha256 "cd19856ce382d7a9e68e69e43bc7bb5d2e110beef19e71c08185abe06180e9f0"
       def install
         bin.install "grwnd-mcp"
       end
