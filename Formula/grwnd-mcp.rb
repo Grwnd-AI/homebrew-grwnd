@@ -5,20 +5,20 @@
 class GrwndMcp < Formula
   desc "Grwnd MCP CLI for Claude Desktop integration"
   homepage "https://grwnd.ai"
-  version "0.1.0"
+  version "0.2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Grwnd-AI/grwnd-mcp/releases/download/v0.1.0/grwnd-mcp_darwin_amd64.tar.gz"
-      sha256 "fd162d6cd66e0621c89c5f3b14cef649ec717320c663c2d2a4425f9ef645a25c"
+      url "https://github.com/Grwnd-AI/grwnd-mcp/releases/download/v0.2.0/grwnd-mcp_darwin_amd64.tar.gz"
+      sha256 "b1693d886cf7595268c46c5f5440213ede64bf05b8e5f7c100d9e596e50e3c3c"
 
       def install
         bin.install "grwnd-mcp"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Grwnd-AI/grwnd-mcp/releases/download/v0.1.0/grwnd-mcp_darwin_arm64.tar.gz"
-      sha256 "ecf421725f59db2c03e05564f11c5265a6259f1d672afd345f5613efda54d594"
+      url "https://github.com/Grwnd-AI/grwnd-mcp/releases/download/v0.2.0/grwnd-mcp_darwin_arm64.tar.gz"
+      sha256 "887dadcb8c9dad564b10bca71a0c63ef71c258f236ea232a2b41aff3e01f0801"
 
       def install
         bin.install "grwnd-mcp"
@@ -28,15 +28,15 @@ class GrwndMcp < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Grwnd-AI/grwnd-mcp/releases/download/v0.1.0/grwnd-mcp_linux_amd64.tar.gz"
-      sha256 "5d97fa1fa939186b5e1a9e38124084afc4393a559b737492e21b64418fbfa07c"
+      url "https://github.com/Grwnd-AI/grwnd-mcp/releases/download/v0.2.0/grwnd-mcp_linux_amd64.tar.gz"
+      sha256 "c30c8d18600048c1e23093b95c62635c27fd981c0180e9c725b80c83c22f2ebb"
       def install
         bin.install "grwnd-mcp"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Grwnd-AI/grwnd-mcp/releases/download/v0.1.0/grwnd-mcp_linux_arm64.tar.gz"
-      sha256 "cd19856ce382d7a9e68e69e43bc7bb5d2e110beef19e71c08185abe06180e9f0"
+      url "https://github.com/Grwnd-AI/grwnd-mcp/releases/download/v0.2.0/grwnd-mcp_linux_arm64.tar.gz"
+      sha256 "177e990eb24a677b4e7dcd2f1f5b131430daa76a801b355d3a91a03e9a69747e"
       def install
         bin.install "grwnd-mcp"
       end
