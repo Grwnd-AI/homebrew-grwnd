@@ -10,7 +10,7 @@ class GrwndMcp < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/Grwnd-AI/grwnd-mcp/releases/download/v0.2.0/grwnd-mcp_darwin_amd64.tar.gz"
-      sha256 "79ba0e6434687fd0255d0831a03871df13dd2f8d7ec4ae94cbdc0acc410286c4"
+      sha256 "57dd26c8148b52448a7e3535ec439a85b73e40cbd2b3dc27cea30e54e6ef99d7"
 
       def install
         bin.install "grwnd-mcp"
@@ -18,7 +18,7 @@ class GrwndMcp < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/Grwnd-AI/grwnd-mcp/releases/download/v0.2.0/grwnd-mcp_darwin_arm64.tar.gz"
-      sha256 "31fc5bfbfcb0c574ef9e1b4349c4dc70821e89df4e3ed7d7877fd2eb4049688e"
+      sha256 "43608256312eb9406099c1123bef2a6537f2907709fdf44991a7d6a36dbfe2f0"
 
       def install
         bin.install "grwnd-mcp"
@@ -29,14 +29,14 @@ class GrwndMcp < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/Grwnd-AI/grwnd-mcp/releases/download/v0.2.0/grwnd-mcp_linux_amd64.tar.gz"
-      sha256 "e62a76c2ac7328c8a986caaea41d21bc15ae50e33b182f20e376587658c43326"
+      sha256 "5bbaa0710d2219e82eb8d15ab7019dcd4ffedba526fcfddd384cc7089d41550e"
       def install
         bin.install "grwnd-mcp"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/Grwnd-AI/grwnd-mcp/releases/download/v0.2.0/grwnd-mcp_linux_arm64.tar.gz"
-      sha256 "4f3a0afd4f356056e89f3724bc8e63689422a0df7a1f851fcab85c83683f52e6"
+      sha256 "9261135ccb85e8eea9b74dfb2fd6d99810a0e7429a6418f888357cdc8593a4d5"
       def install
         bin.install "grwnd-mcp"
       end
