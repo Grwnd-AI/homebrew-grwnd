@@ -5,20 +5,20 @@
 class GrwndMcp < Formula
   desc "Grwnd MCP CLI for Claude Desktop integration"
   homepage "https://grwnd.ai"
-  version "0.3.0"
+  version "0.3.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Grwnd-AI/grwnd-mcp/releases/download/v0.3.0/grwnd-mcp_darwin_amd64.tar.gz"
-      sha256 "0c1d0b7e95ecde1e4c00cc3b61d97846d600471ef880894afd078e150a04d54d"
+      url "https://github.com/Grwnd-AI/grwnd-mcp/releases/download/v0.3.1/grwnd-mcp_darwin_amd64.tar.gz"
+      sha256 "8861234d4c639219c706dde901b8fba0e8baea58bf3931117056a9e703306f0f"
 
       define_method(:install) do
         bin.install "grwnd-mcp"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Grwnd-AI/grwnd-mcp/releases/download/v0.3.0/grwnd-mcp_darwin_arm64.tar.gz"
-      sha256 "dadd24615100aa9a59a6755b6fd5cb62da64502c51558b3f0b9b2ef58dbc4136"
+      url "https://github.com/Grwnd-AI/grwnd-mcp/releases/download/v0.3.1/grwnd-mcp_darwin_arm64.tar.gz"
+      sha256 "07ba021f13d99a257bd2c659cd6ee0412dcba9cf1fc5be11aa383e0b07349ef8"
 
       define_method(:install) do
         bin.install "grwnd-mcp"
@@ -28,15 +28,15 @@ class GrwndMcp < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Grwnd-AI/grwnd-mcp/releases/download/v0.3.0/grwnd-mcp_linux_amd64.tar.gz"
-      sha256 "3f3c564f00a4e31aaf0c0d374dee9aa85763045fd8bcd946fed33818533e92e7"
+      url "https://github.com/Grwnd-AI/grwnd-mcp/releases/download/v0.3.1/grwnd-mcp_linux_amd64.tar.gz"
+      sha256 "198e098039df21f5950dca3e9e15a8a9b60f58b0c4b66f7dadb902040a77e51d"
       define_method(:install) do
         bin.install "grwnd-mcp"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Grwnd-AI/grwnd-mcp/releases/download/v0.3.0/grwnd-mcp_linux_arm64.tar.gz"
-      sha256 "606f718b00a790550286bd0f4ff90a40d2ffb75e1dca78d0427f47f2803c0832"
+      url "https://github.com/Grwnd-AI/grwnd-mcp/releases/download/v0.3.1/grwnd-mcp_linux_arm64.tar.gz"
+      sha256 "ab399720c3641c3500209cc4ca6ec6cf616367ad259dcb1be462c34dc4eed849"
       define_method(:install) do
         bin.install "grwnd-mcp"
       end
